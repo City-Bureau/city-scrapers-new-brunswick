@@ -6,10 +6,10 @@ from city_scrapers_core.constants import BOARD, TENTATIVE  # noqa
 from city_scrapers_core.utils import file_response
 from freezegun import freeze_time
 
-from city_scrapers.spiders.middlesex_co import MiddlesexCoPBSpider
+from city_scrapers.spiders.newbnj_middlesex_co import MiddlesexCoPBSpider
 
 test_response = file_response(
-    join(dirname(__file__), "files", "middlesex_co_pb.json"),
+    join(dirname(__file__), "files", "newbnj_middlesex_co_pb.json"),
     url="https://middlesexcountynj.primegov.com/public/portal",
 )
 spider = MiddlesexCoPBSpider()
@@ -46,7 +46,7 @@ def test_time_notes():
 
 
 def test_id():
-    assert parsed_items[0]["id"] == "middlesex_co_pb/202501141515/x/planning_board"
+    assert parsed_items[0]["id"] == "newbnj_middlesex_co_pb/202501141515/x/planning_board"
 
 
 def test_status():
