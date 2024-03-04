@@ -46,7 +46,9 @@ def test_time_notes():
 
 
 def test_id():
-    assert parsed_items[0]["id"] == "newbnj_middlesex_co_pb/202501141515/x/planning_board"
+    assert (
+        parsed_items[0]["id"] == "newbnj_middlesex_co_pb/202501141515/x/planning_board"
+    )
 
 
 def test_status():
